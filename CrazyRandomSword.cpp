@@ -17,7 +17,7 @@ double CrazyRandomSword::hit(double armor){
 	
 	double damage = hitPoints - (armor - pointsIgnored);
 
-	//if damage is less than armor - points ignored, sets it equal to 0
+	//if armor - points ignored is higher than hitpoints, damage = 0
 	if(damage < 0){
 		damage = 0;
 	}
